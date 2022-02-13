@@ -1,6 +1,6 @@
 # THNM-VITA-GYR
-Tax Help New Mexico VITA/TCE program with Get Your Refund.
+This is a collection of notes, scripts, and processes for working with Tax Help New Mexico, the VITA/TCE program, and Get Your Refund.
 
- 
+
 
 
