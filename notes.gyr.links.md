@@ -6,7 +6,7 @@ GYR Training Site:
 GYR Live Hub Login ( need invite from coordinator ):
 - https://www.getyourrefund.org/en/hub/sign_in
 
-GYR Live Hub Login ( need invite from coordinator ):
+GYR Demo Hub Login ( need invite from coordinator ):
 - https://demo.getyourrefund.org/en/hub/sign_in
 
 TaxSlayer Login:
