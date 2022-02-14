@@ -1,7 +1,5 @@
 # THNM-VITA-GYR
-This is a collection of notes, scripts, and processes for working with Tax Help New Mexico, the VITA/TCE program, and Get Your Refund.
-
-
+Welcome!  This is a collection of my notes, scripts, and processes for working with Tax Help New Mexico, the VITA/TCE program, and Get Your Refund.  Feel free to copy ( i.e. fork ) and adapt for your own purposes.  Pull requests would be great, too.
 
 #
 
