@@ -12,6 +12,13 @@
 - 8879: verify direct deposit routing/account
 
 
+
+at some point
+- upload 8879
+- change return status to "signature requested"
+
+
+
 ## Review complete email
 
 Hello ${NAME},
@@ -42,7 +49,6 @@ Robert at GetYourRefund
   - 8879 direct deposit
 - questions
 - next steps:
-  - upload 8879
   - login and e-Sign
   - eFile
 - any questions
