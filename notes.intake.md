@@ -42,6 +42,8 @@
   - https://www.irs.gov/newsroom/recovery-rebate-credit
   - https://www.irs.gov/individuals/understanding-your-letter-6475
 - 1099-G ( tax refund ):
+  - search for "View My 1099-G Statement"
+  - print layout: portait, size: legal, margins: none, scale: custom 75
   - https://tap.state.nm.us/TAP/_/#1
 - Previous tax filings:
   - ...
