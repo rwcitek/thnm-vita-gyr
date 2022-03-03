@@ -1,20 +1,34 @@
 # Intake Review
-## Template for Federal Intake form, 13614C
-- some missing fields on intake form, 13614C
-  - I:
-    - 1: citizen?
-    - 10: dependent?
-  - II:
-  - III:
-  - IV:
-  - V:
-  - p3:
-    - no comments
-- state questions
-  - NM resident number of months:
-  - incarcerated number of months:
-  - native American?
+## Filings
+- Have you filed a federal return for years 2018, 2019, or 2020? If not, would you like us to do so for you?
+- Have you filed a state return for years 2018, 2019, or 2020? If not, would you like us to do so for you?
 
+## Template for Federal Intake form, 13614C
+- some missing/blank fields on intake form, 13614C
+  - I:
+    - 1: Are you a U.S. citizen?
+    - 10: Can anyone claim you or your spouse as a dependent?
+  - II:
+  - III: For each tax year 2018, 2019, 2020, or 2021, did You (or Your Spouse) Receive:
+    - 1: Alimony or separate maintenance payments? If yes, do you have the recipient’s SSN? 
+    - 3: Scholarships? (Forms W-2, 1098-T)
+    - 6: Alimony income or separate maintenance payments?
+    - 8: Cash/check/virtual currency payments, or other property or services for any work performed not reported on Forms W-2 or 1099?
+    - 9: Income (or loss) from the sale or exchange of Stocks, Bonds, Virtual Currency or Real Estate? (including your home) (Forms 1099-S,1099-B)
+    - 14: Income (or loss) from Rental Property?
+  - IV: For each tax year 2018, 2019, 2020, or 2021, did You (or Your Spouse) Pay:
+    - 4: Any of the following?
+    - 7: Expenses related to self-employment income or any other income you received?
+  - V: Did You (or Your Spouse):
+    - 6: Receive the First Time Homebuyers Credit in 2008?
+
+- state questions
+  - for each tax year:
+    - how many months were you considered a resident of NM?
+    - were you incarcerated for more than 6 months?
+    - are a recognized as a member of a Native American nation, tribe, or pueblo?
+
+- can you upload a voided check to verify the direct deposit information?
 
 
 ## Intake call script
