@@ -9,15 +9,16 @@
   - verify direct deposit routing/account
 - verify filing status
 - verify all forms, e.g. W2s, 1099s
-- 8879: verify direct deposit routing/account
+- state return credits
+- eFile: verify direct deposit routing/account or address
 
 
 ## Upload documents to GYR
 - print returns and upload
 - print 8879 and upload as unsigned
-- change return status to "signature requested"
+- change return status to "Ready for Call"
 
-## Review complete email
+## "Ready for Call" email
 
 Hello ${NAME},
 
@@ -47,9 +48,13 @@ Robert at GetYourRefund
   - 8879 direct deposit
 - questions
 - next steps:
-  - login and e-Sign
-  - eFile
+  - client: login and e-Sign
+  - THNM: eFile
 - any questions
 - thanks
 
+
+## After call
+- change return status to "Signature requested"
+- unassign return(s)
 
