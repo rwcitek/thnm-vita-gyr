@@ -1,6 +1,6 @@
 # Quality Review
 
-## Process
+## Review
 - check for missing info on Fed Intake form 13614C
 - verify personal info
   - name
@@ -12,12 +12,10 @@
 - 8879: verify direct deposit routing/account
 
 
-
-at some point
-- upload 8879
+## Upload documents to GYR
+- print returns and upload
+- print 8879 and upload as unsigned
 - change return status to "signature requested"
-
-
 
 ## Review complete email
 
