@@ -1,3 +1,5 @@
+# Information for the State ID section of the eFile page
+# This template ssumes a NM driver's license
 Type: d
 Number: 
 Issue Date: 
