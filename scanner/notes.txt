@@ -1,3 +1,20 @@
+
+# SSN
+ssn.qr.code () {
+  # takes an SSN as input, formats it into tab separated parts, twice, and then generates QR code
+  ssn=${1:-123456789}
+  cd $( mktemp -d /tmp/ssn.${ssn}.XXXXXX ) &&
+  {
+    echo -n ${ssn} | sed -re 's/(...)(..)(....)/\1 \2 \3\t/'
+    echo -n ${ssn} | sed -re 's/(...)(..)(....)/\1 \2 \3\n/'
+  } | tee ssn.txt | 
+  docker run --rm -i rwcitek/barcode-gen \
+    qrencode --type=PNG --level=H -o - > ssn.qrcode.png
+  pwd
+  od -bc ssn.txt
+}
+
+
 # Personal info
 cp template.personal.info.txt personal.info.txt 
 vi personal.info.txt 
