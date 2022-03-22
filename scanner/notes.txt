@@ -19,6 +19,7 @@ ssn.qr.code () {
 cp template.personal.info.txt personal.info.txt 
 vi personal.info.txt 
 cat personal.info.txt |
+grep -v '^ *#' |
 sed -e 's/ *$//;/y\/n/s/^.*:.*[yY].*$/ /;s/^.*: *//'|
 tr '\n' '\t' |
 docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > personal.info.qr.png
@@ -28,6 +29,7 @@ vi template.state.ID.dl.txt
 # Personal info 2018
 cat personal.info.txt |
 grep -i -v virtual |
+grep -v '^ *#' |
 sed -e 's/ *$//;/y\/n/s/^.*:.*[yY].*$/ /;s/^.*: *//'|
 tr '\n' '\t' |
 docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - \
@@ -38,6 +40,7 @@ docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - \
 cp template.state.ID.dl.txt state.ID.dl.txt
 vi state.ID.dl.txt 
 cat state.ID.dl.txt |
+grep -v '^ *#' |
 sed -e 's/ *$//;/y\/n/s/^.*:.*[yY].*$/ /;s/^.*: *//'|
 tr '\n' '\t' |
 docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > state.ID.dl.qr.png
