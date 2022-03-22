@@ -22,10 +22,9 @@ y/n Stateside military address:
 y/n Check here if foreign address: 
 Address: 
 Apartment: 
-Zip7: 
-Zip4: 
+Zip+4: 
 City: 
 State: 
 State: 
 Phone1: 
-Phone2: 
+# Phone2: 
