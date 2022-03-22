@@ -1,4 +1,6 @@
 # Template for the Personal Information section in the Basic Information page.
+# Works unmodified for years 2019-2021
+# For year 2018, use script that removes the cryptocurrency question
 # 
 First Name: 
 Middle Initial: 
