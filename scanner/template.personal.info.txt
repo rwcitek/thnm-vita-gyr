@@ -1,3 +1,5 @@
+# Template for the Personal Information section in the Basic Information page.
+# 
 First Name: 
 Middle Initial: 
 Last Name: 
