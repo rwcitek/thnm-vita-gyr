@@ -69,8 +69,8 @@ $( cat state.ID.dl.txt)
 
 eof
 } |
-docker run -i rwcitek/barcode-gen pandoc --standalone -w html --metadata pagetitle=" " |
-docker run -i rwcitek/barcode-gen tidy -ashtml -i -w 0 -u -q > ssn.qr.html
+docker run --rm -i rwcitek/barcode-gen pandoc --standalone -w html --metadata pagetitle=" " |
+docker run --rm -i rwcitek/barcode-gen tidy -ashtml -i -w 0 -u -q > ssn.qr.html
 
 
 
