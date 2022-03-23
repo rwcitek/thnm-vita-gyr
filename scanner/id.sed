@@ -4,23 +4,22 @@
 cat dl.scan.txt |
 sed -rne 's/^(D..)/\1: /p' |
 sed -re '
+/^(DBD|DBA|DDB|DBB)/s/([0-9]{2})([0-9]{2})([0-9]{4})/\1-\2-\3/;
 s/^DAC/First Name/;
-s/^DAD/Middle name/;
-s/^DCS/Last name/;
-/^DBB/s/([0-9]{2})([0-9]{2})([0-9]{4})/\1-\2-\3/;
+s/^DAD/Middle Name/;
+s/^DCS/Last Name/;
 s/^DBB/Date of Birth/;
 s/^DAG/Address/;
 s/^DAJ/State/;
 s/^DAI/City/;
+/^DCK/s/([0-9]{3})/\1-/g;
 s/^DCK/ID/;
-/^DBD/s/([0-9]{2})([0-9]{2})([0-9]{4})/\1-\2-\3/;
 s/^DBD/Issue Date/;
-/^DBA/s/([0-9]{2})([0-9]{2})([0-9]{4})/\1-\2-\3/;
 s/^DBA/Expiration Date/;
 s/^DAU/Height/;
 /^DAY/s/GRN/Green/;
 s/^DAY/Eye Color/;
-/^DAW/s/([0-9]+)/\1 lbs/;
+/^DAW/s/$/ lbs/;
 s/^DAW/Weight/;
 /^DAK/s/([0-9]{5})([0-9]{4})/\1-\2/;
 s/^DAK/Zip+4/;
@@ -31,13 +30,16 @@ s/^DCD/Endorsements/;
 s/^DDK/Organ Donor/;
 /DDA/s/F/Compliant/;
 s/^DDA/Compliance/;
-/^DDB/s/([0-9]{2})([0-9]{2})([0-9]{4})/\1-\2-\3/;
 s/^DDB/Revision/;
 s/^DCG/Country/;
 /^DBC/s/1/Male/;
 /^DBC/s/2/Female/;
 /^DBC/s/9/not specified/;
-s/^DBC/Sex/' |
+s/^DBC/Sex/;
+s/: +.*$/\L&/;
+s/( (nm|nw|ne|sw|se|usa))$/\U\1/;
+s/\b./\u&/g;
+;' |
 sed -e 's/: */:\t/' |
 column -s$'\t' -t -R1
 
