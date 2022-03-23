@@ -23,7 +23,6 @@ grep -v -e '^ *#' -e '^---' |
 sed -e 's/ *$//;/y\/n/s/^.*:.*[yY].*$/ /;s/^.*: *//'|
 tr '\n' '\t' |
 docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > personal.info.qr.png
-vi template.state.ID.dl.txt
 
 
 # Personal info 2018
@@ -43,3 +42,37 @@ grep -v -e '^ *#' -e '^---' |
 sed -e 's/ *$//;/y\/n/s/^.*:.*[yY].*$/ /;s/^.*: *//'|
 tr '\n' '\t' |
 docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > state.ID.dl.qr.png
+
+
+# generate HTML page
+{ cat << eof
+# Data in the SSN QR code.
+
+<pre>
+$( od -bc ssn.txt )
+</pre>
+![QR code for SSN](ssn.qrcode.png){ width=200px }
+
+
+# Data in the Personal Information QR code.
+<pre>
+$( cat personal.info.txt )
+</pre>
+![QR code for Personal Information](personal.info.qr.png){ width=200px }
+
+
+# Data in the State ID QR code.
+<pre>
+$( cat state.ID.dl.txt)
+</pre>
+![QR code for State ID]( state.ID.dl.qr.png){ width=200px }
+
+eof
+} |
+docker run -i rwcitek/barcode-gen pandoc --standalone -w html --metadata pagetitle=" " |
+docker run -i rwcitek/barcode-gen tidy -ashtml -i -w 0 -u -q > ssn.qr.html
+
+
+
+
+
