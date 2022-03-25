@@ -1,0 +1,37 @@
+# Template for a single person on the Personal Information section in the Basic Information page.
+# Works unmodified for years 2019-2021
+# For year 2018, use script that removes the cryptocurrency question
+# 
+First Name: 
+Middle Initial: 
+Last Name: 
+Suffix: 
+SSN1: 
+SSN2: 
+SSN3: 
+DOB Month: 
+DOB Day: 
+DOB Year: 
+Occupation: 
+y/n Taxpayer can be claimed as a dependent on someone else's return: 
+y/n Taxpayer was over age 18 and a full-time student: 
+y/n Taxpayer is blind: 
+y/n Taxpayer is deceased: 
+y/n Taxpayer wishes to contribute $3 to PECF: 
+y/n Taxpayer or Spouse served in a combat zone during the current tax year: 
+y/n Taxpayer was a nonresident alien for any part of the year: 
+y/n Use their 2019 earned income for 2021: 
+y/n Taxpayer or Spouse was affected by a natural disaster during the current tax year: 
+y/n Taxpayer has acquired financial interest in virtual currency: 
+y/n Written communications in a language other than English: 
+y/n Written communications in an accessible format: 
+y/n Stateside military address: 
+y/n Check here if foreign address: 
+Address: 
+Apartment: 
+Zip+4: 
+City: 
+State: 
+State: 
+Phone1: 
+# Phone2: 
