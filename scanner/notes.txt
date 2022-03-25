@@ -1,4 +1,19 @@
 
+
+# Setup
+
+cd /tmp/
+curl -L -s -O https://github.com/rwcitek/thnm-vita-gyr/archive/refs/heads/automation.zip 
+
+id=
+unzip -j /tmp/automation.zip '*/scanner/*' -d /tmp/thnm.${id}
+cd /tmp/thnm.${id}
+
+cp template.personal.single.info.txt personal.single.info.txt 
+cp template.state.ID.dl.single.info.txt state.ID.dl.single.info.txt 
+cp template.ssn.info.txt ssn.info.txt
+
+
 # SSN
 ssn.qr.code () {
   # takes an SSN as input, formats it into tab separated parts, twice, and then generates QR code
@@ -85,6 +100,9 @@ eof
 } |
 docker run --rm -i rwcitek/barcode-gen pandoc --standalone -w html --metadata pagetitle=" " |
 docker run --rm -i rwcitek/barcode-gen tidy -ashtml -i -w 0 -u -q > ssn.qr.html
+
+
+
 
 
 
