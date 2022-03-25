@@ -30,22 +30,22 @@ docker run --rm -i rwcitek/barcode-gen \
 
 
 # Personal info
-cp template.personal.info.single.txt personal.info.single.txt
-vi personal.info.single.txt
-cat personal.info.single.txt |
+cp template.personal.single.info.txt personal.single.info.txt
+vi personal.single.info.txt
+cat personal.single.info.txt |
 grep -v -e '^ *#' -e '^---' |
 sed -e 's/ *$//;/y\/n/s/^.*:.*[yY].*$/ /;s/^.*: *//'|
 tr '\n' '\t' |
-docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > personal.info.single.qr.png
+docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > personal.single.info.qr.png
 
 
 # Personal info 2018
-cat personal.info.single.txt |
+cat personal.single.info.txt |
 grep -i -v virtual |
 grep -v -e '^ *#' -e '^---' |
 sed -e 's/ *$//;/y\/n/s/^.*:.*[yY].*$/ /;s/^.*: *//'|
 tr '\n' '\t' |
-docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > personal.info.2018.single.qr.png
+docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > personal.2018.single.info.qr.png
 
 
 # State ID
@@ -70,9 +70,9 @@ $( od -bc ssn.txt )
 
 # Data in the Personal Information QR code.
 <pre>
-$( cat personal.info.single.txt )
+$( cat personal.single.info.txt )
 </pre>
-![QR code for Personal Information](personal.info.single.qr.png){ width=200px }
+![QR code for Personal Information](personal.single.info.qr.png){ width=200px }
 
 
 # Data in the State ID QR code.
