@@ -20,8 +20,11 @@ y/n Taxpayer is deceased:
 y/n Taxpayer wishes to contribute $3 to PECF: 
 y/n Taxpayer or Spouse served in a combat zone during the current tax year: 
 y/n Taxpayer was a nonresident alien for any part of the year: 
+y/n Use their 2019 earned income for 2021: 
 y/n Taxpayer or Spouse was affected by a natural disaster during the current tax year: 
 y/n Taxpayer has acquired financial interest in virtual currency: 
+y/n Written communications in a language other than English: 
+y/n Written communications in an accessible format: 
 y/n Stateside military address: 
 y/n Check here if foreign address: 
 Address: 
