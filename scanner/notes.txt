@@ -31,21 +31,20 @@ ssn.qr.code () {
 
 
 # SSN from a template
-cp template.ssn.info.txt ssn.info.txt
 vi ssn.info.txt
 ssn=$( < ssn.info.txt fgrep SSN: | tr -dc [0-9] )
 {
   echo -n ${ssn} | sed -re 's/(.{3})(.{2})(.{4})/\1 \2 \3\t/'
   echo -n ${ssn} | sed -re 's/(.{3})(.{2})(.{4})/\1 \2 \3\n/'
 } |
+tee ssn.txt |
 docker run --rm -i rwcitek/barcode-gen \
-  qrencode --type=PNG --level=H -o - > ssn.info.qrcode.png
+  qrencode --type=PNG --level=H -o - > ssn.info.qr.png
 
 
 
 
 # Personal info
-cp template.personal.single.info.txt personal.single.info.txt
 vi personal.single.info.txt
 cat personal.single.info.txt |
 grep -v -e '^ *#' -e '^---' |
@@ -64,13 +63,12 @@ docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > pers
 
 
 # State ID
-cp template.state.ID.dl.txt state.ID.dl.txt
-vi state.ID.dl.txt
-cat state.ID.dl.txt |
+vi state.ID.dl.single.info.txt
+cat state.ID.dl.single.info.txt |
 grep -v -e '^ *#' -e '^---' |
 sed -e 's/ *$//;/y\/n/s/^.*:.*[yY].*$/ /;s/^.*: *//'|
 tr '\n' '\t' |
-docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > state.ID.dl.qr.png
+docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > state.ID.dl.single.info.qr.png
 
 
 # generate HTML page
@@ -80,21 +78,21 @@ docker run --rm -i rwcitek/barcode-gen qrencode --type=PNG --level=H -o - > stat
 <pre>
 $( od -bc ssn.txt )
 </pre>
-![QR code for SSN](ssn.qrcode.png){ width=200px }
+![QR code for SSN]( ssn.info.qr.png ){ width=200px }
 
 
 # Data in the Personal Information QR code.
 <pre>
-$( cat personal.single.info.txt )
+$( grep -v '^#' personal.single.info.txt | column -s: -t -R1 )
 </pre>
-![QR code for Personal Information](personal.single.info.qr.png){ width=200px }
+![QR code for Personal Information]( personal.single.info.qr.png ){ width=200px }
 
 
 # Data in the State ID QR code.
 <pre>
-$( cat state.ID.dl.txt)
+$( grep -v '^#' state.ID.dl.single.info.txt | column -s: -t -R1 )
 </pre>
-![QR code for State ID]( state.ID.dl.qr.png){ width=200px }
+![QR code for State ID]( state.ID.dl.single.info.qr.png ){ width=200px }
 
 eof
 } |
