@@ -47,7 +47,12 @@
 - any questions
 - thanks
 
+## Notes when finished
+```
+In TaxSlayer, return was marked as "Ready for Review".  In GYR, status changed to "Ready for QR" and client assigned in your name.
+cc: 
 
+```
 
 ## Missing documents; Replacement documents
 - SSA-1099:
