@@ -18,3 +18,8 @@
 - change return status to "Ready for Call"
 - unassign to TxPCS coordinator
 
+## Notes when finished
+```
+In TaxSlayer, return marked as "Approved". In GYR, status changed to "Ready for Call", Return and 8879 documents uploaded, and client assigned in your name.
+cc: 
+```
