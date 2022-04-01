@@ -20,8 +20,8 @@
 1. Schedule call, mention to client return is on GYR portal
 1. Go over return with client; mention to client to sign in person on Tu, Th, and Sat after 12:30pm
 1. Mark return as approved, do not check complete
-1. Change status "signature requested"
-1. Change 8879 to "From 8879 (Unsigned)"
+1. Change status "Signature requested"
+1. Change 8879 to "Form 8879 (Unsigned)"
 1. Assign to Mandi
 
 ## Notes when finished
