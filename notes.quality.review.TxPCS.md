@@ -17,7 +17,7 @@
 1. Update contact info with e-mail/sms, if missing
 1. Upload return as "Final"
 1. Upload 8879 as "Other"
-1. Schedule call, mention to client return is on GYR portal
+1. Schedule call; mention to client return is on GYR portal
 1. Go over return with client; mention to client to sign in person on Tu, Th, and Sat after 12:30pm
 1. Mark return as approved, do not check complete
 1. Change status "Signature requested"
