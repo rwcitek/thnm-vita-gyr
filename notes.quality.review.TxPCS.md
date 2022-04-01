@@ -13,7 +13,7 @@
 
 
 ## Upload documents to GYR and call
-1. Change status "ready for call"
+- [ ] Change status "ready for call"
 1. Update contact info with e-mail/sms, if missing
 1. Upload return as "Final"
 1. Upload 8879 as "Other"
