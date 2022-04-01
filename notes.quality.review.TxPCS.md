@@ -12,11 +12,17 @@
 - eFile: verify direct deposit routing/account or address
 
 
-## Upload documents to GYR
-- print returns and upload
-- print 8879 and upload as unsigned
-- change return status to "Ready for Call"
-- unassign to TxPCS coordinator
+## Upload documents to GYR and call
+1. Change status "ready for call"
+1. Update contact info with e-mail/sms, if missing
+1. Upload return as "Final"
+1. Upload 8879 as "Other"
+1. Schedule call, mention to client return is on GYR portal
+1. Go over return with client; mention to client to sign in person on Tu, Th, and Sat after 12:30pm
+1. Mark return as approved, do not check complete
+1. Change status "signature requested"
+1. Change 8879 to "From 8879 (Unsigned)"
+1. Assign to Mandi
 
 ## Notes when finished
 ```
