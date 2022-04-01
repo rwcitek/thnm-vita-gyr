@@ -13,7 +13,7 @@
 
 
 ## Upload documents to GYR and call
-- [ ] Change status "ready for call"
+1. Change status "ready for call"
 1. Update contact info with e-mail/sms, if missing
 1. Upload return as "Final"
 1. Upload 8879 as "Other"
@@ -26,6 +26,6 @@
 
 ## Notes when finished
 ```
-In TaxSlayer, return marked as "Approved". In GYR, status changed to "Ready for Call", Return and 8879 documents uploaded, and client assigned in your name.
+In TaxSlayer, return marked as "Approved". In GYR, status changed to "Signature requested", documents 8879 and Return uploaded, and client assigned in your name.
 cc: 
 ```
