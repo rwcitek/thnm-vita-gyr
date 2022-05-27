@@ -18,7 +18,8 @@
 1.  Upload documents to GYR
 1.  Remove documents from drive
 1.  Return documents to client
-1.  Preparation
+
+### Preparation
 
 ### Quality Review ( QR )
 
